@@ -1,0 +1,80 @@
+#top {
+	text-align: center;
+	z-index: 100000;
+	position: absolute;
+	top: 5px;
+	width: 90%;
+	padding: 0 5%;
+	color: #19a19d;
+	font-size: 1em;
+	line-height: 1.4em;
+	font-family: Helvetica, Arial, sans-serif;
+	
+}
+#top a {
+		color: #ff2863;
+	}
+
+#visual-inspector-button {
+	z-index: 100000;
+	position: absolute;
+	width: 4vw;
+	height: 4vw;
+	min-width: 30px;
+	min-height: 30px;
+	left: 20px;
+	bottom: 20px;
+	cursor: pointer;
+	background-color: rgba(0,0,0,0.3);
+}
+
+#visual-inspector-button:hover {
+		background-color: #555;
+	}
+
+#campusList{
+	z-index: 100000;
+	position: absolute;
+	top: 10px;
+	left:10px;
+	width: 300px;
+	max-height: 100vh;
+	overflow: scroll;
+	padding: 10px;
+	color: #000;
+	font-size: 0.75rem;
+	line-height: 1.4em;
+	font-family: Helvetica, Arial, sans-serif;
+	background: rgba(255,255,255,0.5);
+}
+#campusList h1, h2, h3{
+	font-size: 1rem;
+	line-height: 1.4em;
+	padding: 0;
+	margin: 0;
+}
+
+#panel {
+	text-align: center;
+	color: #fff;
+	background: #0a0a2c;
+	text-rendering: optimizeLegibility;
+	position: absolute;
+	z-index: 1000;
+	width: 100%;
+	padding: 10px;
+	left:0;
+	right:0;
+	bottom: 0; 
+}	
+
+
+#panel span{
+	padding: 10px;
+	color: #000;
+	font-size: 1em;
+	line-height: 1.4em;
+	font-family: Helvetica, Arial, sans-serif;
+	background: rgba(255,255,255,0.5);
+	cursor:pointer;
+}

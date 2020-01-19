@@ -1,0 +1,40 @@
+#top {
+	text-align: center;
+	z-index: 100000;
+	position: absolute;
+	top: 5px;
+	width: 90%;
+	padding: 0 5%;
+	color: #19a19d;
+	font-size: 1em;
+	line-height: 1.4em;
+	font-family: Helvetica, Arial, sans-serif;
+	
+}
+#top a {
+		color: #ff2863;
+	}
+
+#visual-inspector-button {
+	z-index: 100000;
+	position: absolute;
+	width: 4vw;
+	height: 4vw;
+	min-width: 30px;
+	min-height: 30px;
+	left: 20px;
+	bottom: 20px;
+	cursor: pointer;
+	background-color: rgba(0,0,0,0.3);
+}
+
+#visual-inspector-button:hover {
+		background-color: #555;
+	}
+
+#campusList{
+  position: absolute;
+  top:0;
+  left:0;
+  z-index:999999;
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Progressively Enhanced Indoor Navigation WebXR</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+	<script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+  <script src="https://unpkg.com/aframe-orbit-controls@1.2.0/dist/aframe-orbit-controls.min.js"></script>
+
+  <script src="third-party/aframe-outline/dist/aframe-outline.js"></script>
+  <script src="third-party/aframe-svg-extruder/index.min.js"></script>
+
+  <script src="scripts/script.js"></script>
+  <link rel="stylesheet" href="styles/style.css">   
+
+</head>
+<body>
+
+
+  <div id="campusList"></div>
+
+  <a-scene cursor="rayOrigin: mouse">
+    <a-assets>
+      <img id="compassImg" src="assets/compass.png">             
+      <img id="ground" src="assets/map.png">              
+      <a-asset-item id="svg-e14" src="assets/mitCampus_e14.svg"></a-asset-item>
+      <a-asset-item id="svg-e15" src="assets/mitCampus_e15.svg"></a-asset-item>
+      <a-asset-item id="svg-e17" src="assets/mitCampus_e17.svg"></a-asset-item>
+      <a-asset-item id="svg-e18" src="assets/mitCampus_e18.svg"></a-asset-item>
+      <a-asset-item id="svg-e19" src="assets/mitCampus_e19.svg"></a-asset-item>
+      <a-asset-item id="svg-e23" src="assets/mitCampus_e23.svg"></a-asset-item>
+      <a-asset-item id="svg-e25" src="assets/mitCampus_e25.svg"></a-asset-item>
+    </a-assets>
+
+    <a-entity geometry="primitive:plane; width:10; height:8;" material="src:#ground; transparent:true; opacity:0.75" position="0 0 0" rotation="-90 0 0"></a-entity>
+
+
+    <a-entity id="e14" position="-0.07047 0.01 1.97942" rotation="-90 0 0">
+      
+      <a-entity id="e14-block" visible="true" clickable
+      position="0 0 0" scale="1 1 6" 
+      svg="src: #svg-e14; proportionalScale: 1; extrude: 0.5; overrideColor: #000;" 
+      ></a-entity>
+
+      <a-entity id="e14-floors" visible="false" >
+
+        <a-entity id="e14_f1" clickable 
+        position="0 0 0.0" scale="1 1 1" 
+        svg="src: #svg-e14; proportionalScale: 1; extrude: 0.5; overrideColor: #000; opacity:0.5" 
+        ></a-entity>
+        <a-entity id="e14_f2" clickable
+        position="0 0 0.25" scale="1 1 1" 
+        svg="src: #svg-e14; proportionalScale: 1; extrude: 0.5; overrideColor: #000; opacity:0.5" 
+        ></a-entity>
+        <a-entity id="e14_f3" clickable
+        position="0 0 0.5" scale="1 1 1" 
+        svg="src: #svg-e14; proportionalScale: 1; extrude: 0.5; overrideColor: #000; opacity:0.5" 
+        ></a-entity>
+        <a-entity id="e14_f4" clickable
+        position="0 0 0.75" scale="1 1 1" 
+        svg="src: #svg-e14; proportionalScale: 1; extrude: 0.5; overrideColor: #000; opacity:0.5" 
+        ></a-entity>
+        <a-entity id="e14_f5" clickable
+        position="0 0 1.0" scale="1 1 1" 
+        svg="src: #svg-e14; proportionalScale: 1; extrude: 0.5; overrideColor: #000; opacity:0.5" 
+        ></a-entity>
+        <a-entity id="e14_f6" clickable
+        position="0 0 1.25" scale="1 1 1" 
+        svg="src: #svg-e14; proportionalScale: 1; extrude: 0.5; overrideColor: #000; opacity:0.5" 
+        ></a-entity>
+  
+      </a-entity>
+
+    </a-entity>
+    
+    <a-entity id="e15" position="-0.62343 0.01 1.04737" rotation="-90 0 0">
+      
+      <a-entity id="e15-block" visible="true" clickable
+      position="0 0 0" scale="1 1 5" 
+      svg="src: #svg-e15; proportionalScale: 1; extrude: 0.5; overrideColor: #000" 
+      ></a-entity>
+
+      <a-entity id="e15-floors" visible="false" clickable
+      position="0 0 0" scale="1 1 5" 
+      svg="src: #svg-e15; proportionalScale: 1; extrude: 0.5; overrideColor: #f00" 
+      ></a-entity>
+
+    </a-entity>
+    
+    <a-entity id="e17" position="-1.10013 0.01 -0.6262" rotation="-90 0 0">
+      
+      <a-entity id="e17-block" visible="true" clickable
+      position="0 0 0" scale="1 1 5" 
+      svg="src: #svg-e17; proportionalScale: 1; extrude: 0.5; overrideColor: #000" 
+      ></a-entity>
+
+      <a-entity id="e17-floors" visible="false" clickable
+      position="0 0 0" scale="1 1 5" 
+      svg="src: #svg-e17; proportionalScale: 1; extrude: 0.5; overrideColor: #f00" 
+      ></a-entity>
+
+    </a-entity>
+    
+
+    <a-entity id="e18" position="-1.02515 0.01 -1.34114" rotation="-90 0 0">
+      
+      <a-entity id="e18-block" visible="true" clickable
+      position="0 0 0" scale="1 1 5" 
+      svg="src: #svg-e18; proportionalScale: 1; extrude: 0.5; overrideColor: #000" 
+      ></a-entity>
+      
+      <a-entity id="e18-floors" visible="false" clickable
+      position="0 0 0" scale="1 1 5" 
+      svg="src: #svg-e18; proportionalScale: 1; extrude: 0.5; overrideColor: #f00" 
+      ></a-entity>
+
+    </a-entity>
+
+
+    <a-entity id="e19" position="-1.22303 0.01 -2.18924" rotation="-90 0 0">
+      
+      <a-entity id="e19-block" visible="true" clickable
+      position="0 0 0" scale="1 1 5" 
+      svg="src: #svg-e19; proportionalScale: 1; extrude: 0.5; overrideColor: #000" 
+      ></a-entity>
+
+      <a-entity id="e19-floors" visible="false" clickable
+      position="0 0 0" scale="1 1 5" 
+      svg="src: #svg-e19; proportionalScale: 1; extrude: 0.5; overrideColor: #f00" 
+      ></a-entity>
+
+    </a-entity>
+
+
+    <a-entity id="e23" position="1.18627 0.01 0.49733" rotation="-90 0 0">
+      
+      <a-entity id="e23-block" visible="true" clickable
+      position="0 0 0" scale="1 1 5" 
+      svg="src: #svg-e23; proportionalScale: 1; extrude: 0.5; overrideColor: #000" 
+      ></a-entity>
+
+      <a-entity id="e23-floors" visible="false" clickable
+      position="0 0 0" scale="1 1 5" 
+      svg="src: #svg-e23; proportionalScale: 1; extrude: 0.5; overrideColor: #f00" 
+      ></a-entity>
+
+    </a-entity>
+
+
+    <a-entity id="e25" position="0.65258 0.01 -1.09917" rotation="-90 0 0">
+      
+      <a-entity id="e25-block" visible="true" clickable
+      position="0 0 0" scale="1 1 5" 
+      svg="src: #svg-e25; proportionalScale: 1; extrude: 0.5; overrideColor: #000" 
+      ></a-entity>
+
+      <a-entity id="e25-floors" visible="false" clickable
+      position="0 0 0" scale="1 1 5" 
+      svg="src: #svg-e25; proportionalScale: 1; extrude: 0.5; overrideColor: #f00" 
+      ></a-entity>
+
+    </a-entity>
+
+       
+       
+      <a-sky color="#f0f0f0"></a-sky>
+      <a-entity id="orbCam" 
+                camera="active: true" 
+                orbit-controls="target: 0 0 0; minDistance: 2; maxDistance: 30; initialPosition: 0 4 5"
+                >
+                      <a-cursor fuse="true"></a-cursor>
+
+                </a-entity> 
+
+
+    <a-entity id="compass" position="-6 0 -4">
+      <a-entity geometry="primitive:plane; width:1; height:1;" material="src:#compassImg; transparent:true;" position="0 0 0" rotation="-90 0 0"></a-entity>
+      
+      <a-entity geometry="primitive: sphere; phiLength: 180; phiStart: 90; radius:0.3" material="color: #fff; opacity: 0.4; emissive: #ffffff" rotation="0 0 90"></a-entity>
+
+    </a-entity>
+
+
+<!--     <a-entity vive-focus-controls></a-entity>
+ -->
+
+  </a-scene>
+
+	<!-- optional for development  -->
+    <div id="visual-inspector-button">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M31.4,20.2l-.6-4.4,2.6-1.7-2.5-3.7-2.6,1.7L24.7,9.4l.6-3-4.4-.9-.6,3-4.4.6L14.2,6.5,10.5,9l1.7,2.6L9.5,15.2l-3-.6L5.6,19l3,.6L9.2,24,6.6,25.7l2.5,3.7,2.6-1.7,3.6,2.7-.6,3,4.4.9.6-3,4.4-.6,1.7,2.6,3.7-2.5-1.7-2.6s2.6-3.5,2.7-3.6l3,.6.9-4.4ZM20,25.5A5.5,5.5,0,1,1,25.5,20,5.5,5.5,0,0,1,20,25.5Z" style="fill:#fff"></path></svg>
+    </div>
+
+	<script>
+	// optional for development
+	document.querySelector('#visual-inspector-button').addEventListener('click', function(){
+		window.postMessage('INJECT_AFRAME_INSPECTOR','*');
+		document.querySelector('#visual-inspector-button').style.display = 'none';
+	})
+	</script>  
+</body>
+</html>
